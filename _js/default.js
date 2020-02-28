@@ -1,0 +1,1 @@
+// Les JS communs entres l'ensemble des pages

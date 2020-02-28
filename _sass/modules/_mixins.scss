@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+// Les mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin font-face($style-name, $file, $family, $category:"") {
+  $filepath: "/fonts/" + $family + "/" + $file;
+  @font-face {
+    font-family: "#{$style-name}";
+    src: url($filepath + ".eot");
+    src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+  }
+  %#{$style-name} {
+    font: {
+      @if $category != "" {
+        family: "#{$style-name}", #{$category};
+      } @else {
+        family: "#{$style-name}";
+        weight: normal;
+      }
+    }
+  }
+}
+
+@mixin box-shadow($top:"", $left:"", $blur:"", $spread:"", $color:"", $inset:"") {
+  -webkit-box-shadow: #{$top} #{$left} #{$blur} #{$spread} #{$color} #{$inset};
+  -moz-box-shadow: #{$top} #{$left} #{$blur} #{$spread} #{$color} #{$inset};
+  -o-shadow: #{$top} #{$left} #{$blur} #{$spread} #{$color} #{$inset};
+  -ms-shadow: #{$top} #{$left} #{$blur} #{$spread} #{$color} #{$inset};
+  box-shadow: #{$top} #{$left} #{$blur} #{$spread} #{$color} #{$inset};
+}
+
+@mixin drop-shadow($top, $left, $blur, $spread, $color, $inset:"") {
+  -webkit-box-shadow: $top $left $blur $spread $color #{$inset};
+  -moz-box-shadow: $top $left $blur $spread $color #{$inset};
+  -o-shadow: $top $left $blur $spread $color #{$inset};
+  -ms-shadow: $top $left $blur $spread $color #{$inset};
+  box-shadow: $top $left $blur $spread $color #{$inset};
+}
+
+@mixin border-all($style,  $sides) {
+  @if ($style != "") {
+    @each $side in $sides {
+      border-#{nth($side, 1)}-width: nth($side, 2);
+      border-#{nth($side, 1)}-color: nth($side, 3);
+    }
+    border-style: $style;
+  }
+}
+
+@mixin flex() {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin flex-align-items($value) {
+  -webkit-box-align: $value;
+  -ms-flex-align: $value;
+  -webkit-align-items: $value;
+  align-items: $value;
+}
+
+@mixin flex-justify-content($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin grayscale($value) {
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  -o-filter: #{"grayscale(#{$value})"};
+  -ms-filter: #{"grayscale(#{$value})"};
+  filter: #{"grayscale(#{$value})"};
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin transform-origin($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin backface-visibility($style: visible) {
+  @each $prefix in -moz, -ms, -o, -webkit {
+    #{$prefix}-backface-visibility: $style;
+  }
+  backface-visibility: $style;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  &.placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &::-webkit-input-placeholder {
+    @content
+  }
+}
+

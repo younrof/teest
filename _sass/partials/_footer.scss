@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+
+footer{
+        background-color: $bg-color-2;
+        padding-top: 3.5%;
+        position: relative;
+        h4{
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: museoSans900;
+            padding-top: 6px;
+            margin-bottom: -1px;
+        } 
+        a{
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+            color: #fff;
+            text-align: left;
+            font-family: museoSans500;
+            padding-bottom: 9.5%;
+            text-transform: uppercase;
+        }
+        .container{
+           .block-1{
+            padding-top: 5.2%;
+            padding-bottom: 9.4%;
+            display: flex;
+            flex-wrap: nowrap;
+            color: #fff;
+              .bl-1{
+                padding-right: 13%;
+                h3{
+                    padding-top: 3px;
+                }
+               }
+              .bl-2{
+                  p{
+                   font-family: museoSans100;
+                   font-size: 15px;
+                   width: 160px;
+                    span{
+                    display: block;
+                    }
+                .ad-li{
+                    text-transform: uppercase;
+                    font-family: museoSans100;
+                }
+                span:first-child{
+                    text-transform: uppercase;
+                    padding: 25px 0px;
+                }
+            }
+        }
+        .bl-3{
+            padding-left: 8%;
+            h4{
+                padding-bottom: 15%;
+            }
+        }
+        .bl-4{
+            padding-left: 14.2%;
+            h4{
+                padding-bottom: 15%;
+            }
+            .cont{
+                padding-bottom: 8px;
+            }
+            
+            .icon{
+                display: flex;
+                flex-wrap: nowrap;
+                a{
+                    padding-right: 13.5%;
+                }
+            }
+        }
+        }  
+    }
+    .block-2{
+            background-color: $bg-color-1;
+            text-align: center;
+            padding: 0.8%;
+            p{
+                font-size: 9.6px;
+                font-family: museoSans500;
+            }
+        }
+    .sec-btn{
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        right: 3.2%;
+        bottom: 19%;
+        z-index: 2;
+    #monBouton{
+        background-color: #27c6f0;
+        background-image: url("../_images/png/icon/Shape\ 1\ copy\ 6.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        border: none;
+        margin-right: 3.3%;
+    }
+    #monBouton:hover{
+        background-color: #1e2127;
+    }
+    }
+}
+    

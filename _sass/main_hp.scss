@@ -1,0 +1,655 @@
+@charset "UTF-8";
+// bien respecter l'ordre d'inclusion
+@import "modules/_variables.scss";
+@import "modules/_default.scss";
+@import "partials/_header.scss";
+@import "pages/_home.scss";
+@import "partials/_footer.scss";
+@import "_responsive.scss";
+
+
+
+
+.diaporama{
+    position: relative;
+    .s-img{
+        position: absolute;
+        height: 100%;
+        background-image: url("../_images/png/Rectangle\ 1.png");
+        background-repeat: no-repeat;
+        width: 50%;
+        right: 0;
+        z-index: 2;
+        top: 0;
+         img{
+             height: auto;
+            // width: 100%;
+         }
+        
+    }
+    #flexslider-1{
+        border: none;
+        figure{
+            position: absolute;
+            z-index: 1;
+            
+        }
+        .slides{
+            li{
+                img{
+                    display: absolute;
+                    
+                }
+                position: relative;
+
+                .accroche{
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    h2{
+                        text-transform: uppercase;
+                        font-size: 61px;
+                    font-family: museoSans900;
+                    color: $bg-color-1;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    text-align: right;
+                    position: absolute;
+                    top: 48.2%;
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    padding-right: 2.8%;
+                    z-index: 2;
+                    }
+                }
+            }
+        }
+        .flex-control-nav {
+            display: none;
+        }
+        
+    }
+    .custom-navigation{
+        
+        a{
+            width: 61px;
+            height: 59px;
+            background: rgba(169, 169, 169, 0.24);
+            z-index: 5; 
+            position: absolute;
+            top: 434px;
+            left: 60px;
+        }
+        .flex-next{
+            right: 59px;
+            left: initial;
+        }
+    }
+}
+
+
+.sec-1{
+    background-color: $bg-color-2;
+    padding-bottom: 2px;
+    .container{
+        display: flex;
+        flex-wrap: nowrap;
+        .bl-1{
+            width: 45%;
+            article{
+                margin-bottom: 227px;
+                h2{
+                    text-transform: uppercase;
+                    font-family: museoSans900;
+                    text-align: left;
+                    font-size: 50px;
+                    letter-spacing: -6px;
+                    padding-top: 105px;
+                    padding-bottom: 38px;
+                    line-height: 128%;
+                    .sp-color-1{
+                        font-size: 103px;
+                        display: block;
+                        letter-spacing: -11px;        
+                    }
+                    .space{
+                        line-height: 1em;
+                    }
+
+                }
+                p{
+                    color: rgb(245, 248, 249);
+                    font-size: 15px;
+                    font-family: museoSans100i;
+                    padding-bottom: 29px;
+                    width: 401px;
+                }
+                .btn-b{
+                    margin-left: 2px;
+                }
+            }
+        }
+        .bl-2{
+            position: relative;
+            div.border{
+                height: 433px;
+                width: 357px;
+                border: 9px solid $bg-color-1;
+                position: absolute;
+                top: 13.3%;
+                left: 148px;
+            }
+            div.b-img{
+                position: relative;
+                top: 1%;
+                left: 14px;
+                figure{
+                    img{
+                       // width: 100%;
+                        height: auto;
+                        position: absolute;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec-2{
+    background-color: $bg-color-1;
+    padding-bottom: 3px;
+    .container{
+        h2{
+            text-transform: uppercase;
+            position: relative;
+            top: -46px;
+            line-height: 3rem;
+            letter-spacing: -4px;
+            font-family: museoSans900;
+            font-size: 61px;
+            color: $bg-color-1;
+            
+            .sp-color-2{
+                font-family: museoSans900;
+                font-size: 70px;
+                padding-left: 9px;
+            }
+        }
+        #owl-slide-1{
+            padding-top: 9.7%;
+            padding-bottom: 19.5%;
+            .owl-dots{
+                display: none;
+            }
+    article{
+        background-color: $bg-color-2;
+        text-align: center;
+        padding-bottom: 40px;
+        .bl-2{
+            .btn-b{
+                margin-left: 7px;
+                padding: 9% 8.2%;
+                font-size: 13px;
+                margin-bottom: 2px;
+            }
+            h4{
+                text-transform: uppercase;
+                color: $bg-color-1;
+                font-size: 9px;
+                font-family: museoSans500;
+                padding-top: 14.5%;
+            }
+            p{
+                padding: 0 11%;
+                font-size: 14px;
+                font-family: museoSans100;
+                padding-bottom: 4%;
+                color: white;
+                padding-top: 2px;
+                line-height: 1.4rem;
+            }
+            h3{
+                text-transform: uppercase;
+                padding-top: 3%;
+                padding-bottom: 1%;
+                font-size: 16px;
+                font-family: museoSans900;
+                color: #fff;
+            }
+        }
+    }
+    }
+}
+}
+
+.sec-3{
+    .owl-carousel{
+        background-color: #24272e;
+        .owl-dots{
+            display: none;
+        }
+        img{
+           padding: 0 12px;
+        }
+    }
+}
+.sec-4{
+    background-color: $bg-color-2;
+    padding-bottom: 50px;
+    h4{
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 143px;
+        padding-bottom: 14px;
+        padding-left: 6px;
+        font-size: 9px;
+        font-weight: 500;
+        color: #fff;
+        font-family: museoSans500;
+    }
+    display: flex;
+    flex-wrap: nowrap;
+    .block{
+        position: relative;
+        
+        .owl-carousel{
+                    width: 90%;
+                    background-color: transparent;
+                    color: #fff;
+                    border: none;
+                    text-align: center;
+                    z-index: 3;
+                    margin: 3px auto;
+                    
+                    .item{
+                            p{
+                                width: 78%;
+                                margin: 0 11.6%;
+                                font-size: 14px;
+                                font-family: museoSans100i;
+                                color: #DEDFDF;
+                                line-height: 1.4rem;
+                                padding-bottom: 2.5%;
+                            }
+                    }
+                    .owl-nav{
+                        display: none;
+                    }
+                    .owl-dots{
+                        .owl-dot{
+                            span{
+                                background-color: $bg-color-1;
+                                width: 9px;
+                                height: 9px;
+                            }   
+                        }   
+                    }
+                }
+                .img-1, .img-2{
+                   position: absolute;
+                    z-index: 1;
+                    margin-top: -3%;
+                }
+                .img-2{
+                   left: 697px;
+                }
+                .img-1{
+                    padding-left: 8%;
+                 }
+}      
+}
+
+.sec-5{
+    background-color: $bg-color-2;
+    padding-bottom: 6.4%;
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        color: $bg-color-1;
+        font-size: 36px;
+        font-family: museoSans900;
+        padding-top: 4.6%;
+        letter-spacing: -1px;
+        line-height: 132%;
+        padding-bottom: 7.3%;
+        span{
+            display: block;
+            color: #fff;
+            font-size: 59px;
+            letter-spacing: -4px;
+        }
+    }
+    .equipe{
+        display: flex;
+        flex-wrap: wrap;
+        article{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 50%;
+            background-color: #1d1f25;
+            div{
+                width: 50%;
+                div{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding-left: 6px;
+                    a{
+                        padding-right: 18px;
+                    }
+                }
+            }
+            .bl-2{
+                padding-left: 10%;
+                h3{
+                    text-transform: uppercase;
+                    color: $bg-color-1;
+                    text-align: left;
+                    font-family: museoSans900;
+                    padding-top: 25.5%;
+                    letter-spacing: -2px;
+                    font-size: 21px;
+                    span{
+                        display: block;
+                    }
+                }
+                p{
+                    color: gray;
+                    font-family: museoSans100;
+                    padding-bottom: 13.5%;
+                    letter-spacing: -1px;
+                    margin-top: 5%;
+                }
+            }
+        }
+        article:nth-child(4n+3), article:nth-child(4n+4){
+            .bl-1{
+                order: 2;
+                -webkit-order: 2;
+            }
+            .bl-2{
+                order: 1;
+                -webkit-order: 1;
+              h3, p{
+                  text-align: right;
+                  padding-right: 25%;
+              }
+              h3{
+                padding-top: 26%;
+                padding-bottom: 1%;
+              }
+              p{
+                  padding-bottom: 13%;
+              }
+              div{
+                  margin-left: 61px;
+              }
+            }
+        }
+    }
+}
+
+.sec-6{
+    
+    .block{
+        display: flex;
+        flex-wrap: nowrap;
+       .bl-1{
+            padding-bottom: 6.5%;
+            width: 50%;
+            background-color: $bg-color-1; 
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            
+            .bl{
+                text-align: center;
+                padding-right: 6%;
+
+                h2{
+                    font-size: 36px;
+                    padding-top: 32.2%;
+                    padding-bottom: 8.8%;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-family: museoSans900; 
+                    letter-spacing: -2px;
+                }
+
+                form{
+                    fieldset{
+                        input, textarea{
+                            display: block;
+                            font-size: 9px;
+                            font-family: museoSans500;
+                        }
+                        input{
+                            margin-bottom: 5px;
+                            text-align: center;
+                            width: 381px;
+                            height: 48px;
+                            padding-top: 2%;  
+                             
+                        }
+                        ::placeholder{
+                            color: #000;
+                            text-transform: uppercase;
+                            font-size: 9px;
+                            font-family: museoSans500;
+                        }
+                        textarea{
+                            width: 381px;
+                            height: 128px;
+                            padding-top: 5.2%;
+                            resize: none;
+                            margin-bottom: 7.3%;
+                            text-align: center;
+                            font-size: 9px;
+                            font-family: museosans500;
+                        }
+                        .btn-v{
+                            margin: 0 auto;
+                            background-color:$bg-color-2;
+                            color: #fff;
+                            border: none;
+                            width: 173px;
+                            height: 60px;
+                            font-weight: 100;
+                            font-size: 9px;
+                            font-family: museoSans500;
+                            text-transform: uppercase;
+                            &:hover{
+                                background-color: #fff;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+
+       }
+       .bl-2{
+            width: 50%;
+            background-color: #27c6f0; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .bl{
+                text-align: center;
+                padding-left: 6%;
+                h2{
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 36px;
+                    text-align: center;
+                    padding-top: 31.8%;
+                    text-transform: uppercase;
+                    font-family: museoSans900;
+                    padding-bottom: 6.6%;
+                    letter-spacing: -4px;
+                    span{
+                        color: $bg-color-2;
+                        font-family: museoSans900;
+                    }
+                }
+
+                .conteneur-img{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 385px;
+                    
+                    figure{
+                        background-color: $bg-color-1;
+                            width: 123px;
+                            height: 123px;
+                            position: relative;
+                            margin-left: 5px;
+                            margin-top: 5px;
+                            img{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+.sec-7{
+    background-color: $bg-color-2;
+    padding-bottom: 5.6%;
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        color: #00baeb;
+        font-family: museoSans900;
+        padding-top: 12.3%;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: -3px;
+        padding-bottom: 7.7%;
+        span{
+            display: block;
+            color: #fff;
+            font-size: 50px;
+            letter-spacing: -4px;
+        }
+    }
+    #owl-c2{
+        background-color: $bg-color-2;
+        .owl-dots{
+           display: none;
+        }
+            article{
+                text-align: center;
+                width: 265px;
+
+                .bl-2{
+                    .btn-b{
+                        font-size: 13px;
+                        font-family: museoSans700;
+                        margin-bottom: 1px;
+                        background-color: #a5a6a9;
+                        color: $bg-color-2;
+                        padding: 8.5% 34%;
+                    }
+                    .btn-b:hover{
+                        background-color: $bg-color-1;
+                        color: #fff;
+                    }
+                    p{
+                        padding: 0 10%;
+                        font-size: 14px;
+                        font-family: museoSans100;
+                        padding-bottom: 9%;
+                        color: white;
+                        padding-top: 2px;
+                        line-height: 1.4rem;
+                        width: 87%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    h3{
+                        padding-top: 15%;
+                        padding-bottom: 3px;
+                        font-size: 16px;
+                        font-family: museoSans900;
+                        color: $bg-color-1;
+                        width: 49%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                
+            }
+        .owl-nav{
+            .owl-prev, .owl-next{
+                font-size: 14px;
+                margin: -22.4% -30.8%;
+                padding: 4px 6px;
+                background: rgba(255, 255, 255, 0.23);
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+        }
+    }
+    
+}
+
+.sec-8{
+    background-color: #1d1f25;
+    padding-top: 5.2%;
+    padding-bottom: 5.3%;
+    .container{
+        .block{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    .bl-1{
+        h2{
+            text-transform: uppercase;
+            font-family: museoSans900;
+            letter-spacing: -2px;
+            line-height: 1.25em;
+            font-size: 36px;
+            color: #fff;
+        }
+        span{
+            color: #27c6f0;
+            font-size: 48px;
+            display: block;
+        }
+    }
+    .bl-2{
+        form{
+            padding-top: 5.5%;
+            input{
+                width: 424px;
+                height: 44px;
+                border: none;
+                cursor: pointer;
+                background-image: url("../_images/png/icon/Forma\ 1.png");
+                background-repeat: no-repeat;
+                background-position: 95.8% 54%;
+            }
+            ::placeholder{
+                color: #000;
+                padding-left: 20px;
+                font-size: 9px;
+                font-family: museoSans700;
+            }
+        }
+    }
+}
+}
+}
+
+

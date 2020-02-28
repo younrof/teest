@@ -1,0 +1,9 @@
+@charset "UTF-8";
+// bien respecter l'ordre d'inclusion
+@import "modules/_variables.scss";
+@import "modules/_mixins.scss";
+@import "modules/_default.scss";
+@import "partials/_header.scss";
+@import "pages/_interne.scss";
+@import "partials/_footer.scss";
+@import "_responsive.scss";

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+header{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  
+
+  .logo{
+    padding-top: 1.6%;
+    padding-left: 3.3%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .menu-btn{
+        position: absolute;
+        z-index: 3;
+        padding-top: 1.25%;
+        padding-left: 94.5%;
+        color: black;
+        background-color: transparent;
+        border: none;
+        .menu-hr-1{
+            margin: 12px 1px;
+            cursor: pointer;
+        }
+        .menu-hr-2{
+            margin: 7px 1px;
+            cursor: pointer;
+        }
+        .sp-label{
+            color: #25343c;
+            font-size: 13px;
+            font-family: museoSans500;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+  }
+}

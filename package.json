@@ -1,0 +1,61 @@
+{
+  "name": "Intitule_projet",
+  "version": "1.0.0",
+  "description": "Description du projet",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "URL"
+  },
+  "keywords": [
+    "key1",
+    "key2"
+  ],
+  "author": "Fadoua EL KEBRAOUI",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.26.7",
+    "child_process": "^1.0.2",
+    "critical": "^0.8.4",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-critical-css": "^1.0.1",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-csslint": "^1.0.0",
+    "gulp-html": "^0.4.6",
+    "gulp-html5-lint": "^1.1.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-php2html": "^0.3.4",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-scsslint": "0.0.5",
+    "gulp-sitemap": "^4.2.0",
+    "gulp-style-inject": "^0.1.0",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "gulp-version-number": "^0.1.7",
+    "jshint": "^2.11.0",
+    "ngrok": "^2.2.9",
+    "psi": "^3.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "critical": "^0.8.4",
+    "request": "^2.88.2"
+  }
+}
